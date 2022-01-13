@@ -1,0 +1,8 @@
+version: "3.6"
+
+services:
+  builder:
+    image: afidos/flutter-builder:${VERSION:-latest}
+    build:
+      context: .
+      dockerfile: Dockerfile
